@@ -19,7 +19,7 @@ async def create_item(item: ItemIn_Pydantic):
 
 register_tortoise(
     app,
-    db_url="sqlite://:memory:",
+    db_url="sqlite://db.sqlite",
     modules={"models": ["models"]},
     generate_schemas=True,
     add_exception_handlers=True,
